@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Thymeleaf</title>
+    <script type="text/javascript" th:inline="javascript">
+        function changeText() {
+            document.querySelector(".text").innerHTML = "Text";
+            console.log('test')
+        }
+    </script>
+</head>
+<body>
+    <h1 class="text">
+        Hello Thymeleaf
+    </h1>
+    <button class="test-btn" onclick="changeText()">
+        Click
+    </button>
+</body>
+</html>
